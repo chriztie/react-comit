@@ -26,7 +26,7 @@ Every property has different kinds of values that it can take in. In our example
   - A [keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords), e.g. `blue` or `red`
   - A [hexadecimal](https://stackoverflow.com/questions/22239803/how-does-hexadecimal-color-work), e.g. `#00FF00`
   - A [rgb](https://en.wikipedia.org/wiki/RGB_color_model#Geometric_representation), e.g. `rgb(255, 0, 0)`
-  - A rgba, like rgb but with alpha (opicty) as the last argument, e.g. `rgba(255, 0, 0, 1)`
+  - A rgba, like rgb but with alpha (opacity) as the last argument, e.g. `rgba(255, 0, 0, 1)`
 
 ## More Properties
 
