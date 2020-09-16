@@ -32,8 +32,6 @@ Wes Bos has a great video series on flexbox that is entirely free and I recommen
 - Create an account
 - Watch the series!
 
-# Exercise Results
-
 # Further Reading
 
 - [Flebox tutorial on MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
