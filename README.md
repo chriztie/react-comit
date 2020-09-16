@@ -1,4 +1,4 @@
-# React
+# React Change
 
 This course is designed to help you to be able to develop web applications using React
 
