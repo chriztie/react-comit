@@ -3,7 +3,8 @@
 # Tutorials
 
 - [JavaScript Fundamentals - Functions](https://javascript.info/function-basics)
-- [JavaScript Fundamentals - Functions as values](https://javascript.info/function-expressions-arrows)
+- [JavaScript Fundamentals - Functions Expressions](https://javascript.info/function-expressions)
+- [JavaScript Fundamentals - Arrow Functions](https://javascript.info/arrow-functions-basics)
 
 # Exercise Instructions
 
