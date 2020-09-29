@@ -7,7 +7,7 @@
 # Exercise Instructions
 
 - Create the files `index.html` and `index.js`
-- Set the document title to "Lesson 22"
+- Set the document title to "Lesson 25"
 - Include the `index.js` file into the `index.html`
 - Inside the `index.js`:
   - Define weekdayNumber and assign a numeric value between 1 and 7
