@@ -1,0 +1,1 @@
+Add a new component so that users can add a new student. The new component should have text boxes to capture Name, Location and Course Id. Add changehandlers so that when text is modified, the changes are preserved.
