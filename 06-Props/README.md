@@ -2,7 +2,11 @@
 
 ```javascript
 
-function Child(props) {
+interface ChildProps{
+  name: string;
+}
+
+function Child(props : ChildProps) {
   return <div>Childs name is {props.name}</div>;
 }
 
