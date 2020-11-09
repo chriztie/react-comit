@@ -16,10 +16,10 @@ function Child(props : ChildProps) {
 const nameValue = "John Doe";
 <Child name={nameValue}>
 
-
+```
 props are immutable (Read-only)
 
-```
+
 
 ## Default Props
 
