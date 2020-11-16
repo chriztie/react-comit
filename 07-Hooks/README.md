@@ -67,9 +67,11 @@ const context = useContext(MyContext);
 useReducer is a hook introduced for the purpose of managing state. When managing state is simple, you may use this hook
 
 ```js
+import React, {useReducer} from 'react';
+
 const initialState = { count: 0 };
 
-function reducer(state, action) {
+const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
       return { count: state.count + 1 };
@@ -80,13 +82,32 @@ function reducer(state, action) {
   }
 }
 
-function Counter() {
+const Counter = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <>
       Count: {state.count}
       <button onClick={() => dispatch({ type: "decrement" })}>-</button>
       <button onClick={() => dispatch({ type: "increment" })}>+</button>
+    </>
+  );
+}
+```
+
+## useRef
+
+Used to refer a mutable object for the full lifetime of the component. 
+
+```js
+const App = () => {
+  const inputElement = useRef(null);
+  const handleClick = () => {    
+    inputElement.current.focus();
+  };
+  return (
+    <>
+      <input ref={inputElement} type="text" />
+      <button onClick={handleClick}>Focus the text field!</button>
     </>
   );
 }
