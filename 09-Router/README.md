@@ -1,7 +1,9 @@
 React does not have a built-in router. Therefore, a router should be installed separately. `react-router` is an open source library and it is the most popular. But it is not a part of React
 
 `HashRouter` - places hashes in urls - Better for older browsers
+
 `BrowserRouter` for web APIs - `HTML5 History API` is used for clean urls (No hashes in the urls as it is recommended for new web apps)
+
 `MemoryRouter` - Does not update the URL in the browser but stores the URLs in memory and best for automated testing and non browser environments such as `react-native`
 
 - `Router` component to wrap the entry point
@@ -23,7 +25,7 @@ A sample setup can be found below;
 Index.js
 
 ```js
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 render(
   <Router>
