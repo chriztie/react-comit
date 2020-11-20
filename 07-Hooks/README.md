@@ -64,7 +64,7 @@ const context = useContext(MyContext);
 
 ## useReducer
 
-useReducer is a hook introduced for the purpose of managing state. When managing state is simple, you may use this hook
+useReducer is a hook introduced for the purpose of managing state. When managing state is complex especially when you have multiple sub values in your state OR when your new state depends on the previous state, you may use this hook
 
 ```js
 import React, {useReducer} from 'react';
@@ -90,6 +90,7 @@ const Counter = () => {
       <button onClick={() => dispatch({ type: "decrement" })}>-</button>
       <button onClick={() => dispatch({ type: "increment" })}>+</button>
     </>
+
   );
 }
 ```
