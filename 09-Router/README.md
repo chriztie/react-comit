@@ -10,6 +10,7 @@ React does not have a built-in router. Therefore, a router should be installed s
 - `Route` can declare the component to load using props. `exact` prop can to used to indicate to select the component if the path matches exactly
 - `Link` components to create anchors. `to` prop to mention the route. Managed by react router and wont postback to the browser which enables instantaneous navigation
 - `NavLink` supports `activeStyle` which supports styling. `to` prop to mention the route
+- `Switch` component ensure the router picks only one route. Required when adding 404 page
 
 Redirecting users
 
@@ -17,7 +18,6 @@ Redirecting users
 
 - `history.push(route)`
 
-- `Switch` component ensure the router picks only one route. Required when adding 404 page
 - `Prompt` to notify users when they try to navigate to another page. `when` should be a condition and `message` should be the text which should be displayed to users
 
 A sample setup can be found below;
