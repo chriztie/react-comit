@@ -101,9 +101,9 @@ Used to refer a mutable object for the full lifetime of the component.
 
 ```js
 const App = () => {
-  const inputElement = useRef(null);
+  const inputElement = useRef<HTMLInputElement>(null);
   const handleClick = () => {    
-    inputElement.current.focus();
+    inputElement?.current?.focus();
   };
   return (
     <>
