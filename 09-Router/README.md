@@ -1,4 +1,4 @@
-React does not have a built-in router. Therefore, a router should be installed separately. `react-router` is an open source library and it is the most popular. But it is not a part of React
+React does not have a built-in router. Therefore, a router should be installed separately. `react-router-dom` is an open source library and it is the most popular. But it is not a part of React
 
 `HashRouter` - places hashes in urls - Better for older browsers
 
@@ -69,4 +69,31 @@ function TestComponent(props) {
   props.location.query; // { queryParameter1 : 12, queryParameter2 : 13 }
   props.location.pathname; // /path/segmentName?queryParameter1=12&queryParameter2=13
 }
+```
+Typescript implementation
+
+```js
+<Route path="/path/:segment" component={TestComponent} />
+```
+
+```ts
+import React, {FC} from "react";
+import {RouteComponentProps} from 'react-router';
+
+interface IMatchParams{
+    id: string;
+}
+
+interface TestComponentProps extends RouteComponentProps<IMatchParams>{
+
+}
+
+const TestComponent : FC<TestComponentProps> = (props) => {
+return <>
+    <div>{props.match.params.id}</div>    
+    <div>{props.location.pathname}</div>
+    </>;
+}
+
+export default TestComponent;
 ```
